@@ -38,13 +38,6 @@ public class Card {
     }
     System.out.println(deck);
     Collections.shuffle(deck);
-//    for (int i = 0; i < deck.size(); i++)
-//    deck[i] = deck[topCard] {
-//      deck.remove(Topcard);
-//    }
-//    Color getcolor (i)
-//    if (Color = RED) {
-//
-//    }
+System.out.println(deck);
   }
 }

@@ -42,6 +42,8 @@ public class MagicTrick {
     }
     redPile.addAll(blackExtract);
     blackPile.addAll(redExtract);
+    System.out.printf("Red Pile: %s%n", redPile);
+    System.out.printf("Black Pile: %s%n", blackPile);
     long redCount = redPile.parallelStream()
         .filter((c) -> c.getSuit().getColor()== Color.RED)
         .count();
@@ -50,8 +52,7 @@ public class MagicTrick {
         .filter((c) -> c.getSuit().getColor()== Color.BLACK)
         .count();
     assert redCount == blackCount;
-    System.out.println(redPile);
-    System.out.println(blackPile);
+
   }
 
 
